@@ -9,14 +9,14 @@ question = raw_input("Ask any question of the Omnipotent Olivia Onyx O'Reilly! L
 print answer
 question = raw_input("\nYour session includes two more questions. Enter another question, or enter no to end your fortune-telling session.\n")
 selection = random.choice(responses)
-result = selection
+answer = selection
 if question != "no":
-    print result
+    print answer
     question = raw_input("\nAsk your third and last question, or enter no to end your session.\n")
     selection = random.choice(responses)
-    conclusion = selection
+    answer = selection
     if question != "no":
-        print conclusion
+        print answer
         print ("\nI hope you are pleased with the knowledge that you have been granted. Thank you for communing with the spirits. May your most heartfelt wishes come true!\n")
     else:
         print ("\nThank you for communing with the spirits. May all of your questions be answered, and all of your dreams come true!\n")
